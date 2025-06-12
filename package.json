@@ -1,0 +1,37 @@
+{
+  "name": "storybook-vitest-nextjs15-bug-reproduction",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test-storybook": "npx vitest run src/components/**/*.stories.tsx"
+  },
+  "dependencies": {
+    "next": "15.1.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^9.0.8",
+    "@storybook/addon-interactions": "^9.0.8",
+    "@storybook/addon-onboarding": "^9.0.8",
+    "@storybook/addon-vitest": "^9.0.8",
+    "@storybook/nextjs-vite": "^9.0.8",
+    "@storybook/react": "^9.0.8",
+    "@storybook/test": "^9.0.8",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitest/browser": "^3.2.3",
+    "eslint": "^8",
+    "eslint-config-next": "15.1.0",
+    "playwright": "^1.48.2",
+    "typescript": "^5",
+    "vitest": "^3.2.3"
+  }
+}
